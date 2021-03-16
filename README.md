@@ -15,8 +15,7 @@ openssl aes-256-cbc -d \
     -md sha1 -salt -iter 5
 ```
 
-Input password when prompt
-
+Input password when prompt, then execute
 
 ```bash
 tar Jxvf install.exz
