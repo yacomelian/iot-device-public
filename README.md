@@ -1,1 +1,1 @@
-# iot-device-pulic
+# iot-device-public
