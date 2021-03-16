@@ -7,7 +7,7 @@ cd
 mkdir run
 cd run
 
-curl -s https://github.com/yacomelian/iot-device-public/raw/main/install.exz --output install.exz
+curl -s https://raw.githubusercontent.com/yacomelian/iot-device-public/main/install.exz --output install.exz
 
 openssl aes-256-cbc -d \
     -in install.exz \
