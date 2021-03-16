@@ -21,9 +21,11 @@ Input password when prompt, then execute
 tar Jxvf install.exz
 ```
 
-Then run when
+To finish, run:
 
 ```bash
 ./install.sh
 ./updater.sh
 ```
+
+You will have all installed and updated.
