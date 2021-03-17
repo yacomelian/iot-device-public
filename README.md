@@ -5,7 +5,7 @@
 To install, execute:
 
 ```bash
-curl -s https://raw.githubusercontent.com/yacomelian/iot-device-public/main/install.sh | bash
+bash <(curl -s https://raw.githubusercontent.com/yacomelian/iot-device-public/main/install.sh)
 ```
 First password is package password (secret)
 Second password is because sudo is requiredt to configure the device and dependencies
