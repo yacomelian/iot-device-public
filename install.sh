@@ -19,7 +19,11 @@ if [ $? -eq 0 ]; then
     tar -Jxvf install.txz
     ./install.sh
     ./updater.sh
+    rm dist.txz 2> /dev/null
+    rm install.txz 2> /dev/null
 else
     echo "ERROR: Posiblemente password incorrecta"
+    rm install.exz 2> /dev/null
 fi
+
 
