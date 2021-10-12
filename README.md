@@ -26,7 +26,7 @@ curl -s https://raw.githubusercontent.com/yacomelian/iot-device-public/main/inst
 
 > **Test**
 ```bash
-#curl -s https://raw.githubusercontent.com/yacomelian/iot-device-public/devel/install.exz --output install.exz
+curl -s https://raw.githubusercontent.com/yacomelian/iot-device-public/devel/install.exz --output install.exz
 ```
 
 Decipher
@@ -46,7 +46,7 @@ rm install.txz install.exz
 ```
 
 
-> **Test** only
+> **Test**
 ```bash
 sed -i "s#/main/#/devel/#" updater.sh
 ```
