@@ -55,6 +55,7 @@ To finish, run:
 ```bash
 ./install.sh
 ./updater.sh
+rm dist.txz
 ```
 
 
