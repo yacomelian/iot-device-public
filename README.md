@@ -35,7 +35,7 @@ Decipher
 openssl aes-256-cbc -d \
     -in install.exz \
     -out install.txz \
-    -md sha1 -salt -iter 5
+    -md sha512 -salt -iter 5
 ```
 
 Input password when prompt, then execute
