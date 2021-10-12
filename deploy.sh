@@ -13,7 +13,7 @@ curl -s https://raw.githubusercontent.com/yacomelian/iot-device-public/main/inst
 openssl aes-256-cbc -d \
     -in install.exz \
     -out install.txz \
-    -md sha1 -salt -iter 5 \
+    -md sha512 -salt -iter 5 \
     -pass "pass:${PASSWORD}"
 
 if [ $? -eq 0 ]; then
