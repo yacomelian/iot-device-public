@@ -26,7 +26,7 @@ curl -s https://raw.githubusercontent.com/yacomelian/iot-device-public/main/inst
 
 > **Test**
 ```bash
-#curl -s https://raw.githubusercontent.com/yacomelian/iot-device-public/devel/install.exz --output install.exz
+curl -s https://raw.githubusercontent.com/yacomelian/iot-device-public/devel/install.exz --output install.exz
 ```
 
 Decipher
@@ -35,7 +35,7 @@ Decipher
 openssl aes-256-cbc -d \
     -in install.exz \
     -out install.txz \
-    -md sha1 -salt -iter 5
+    -md sha512 -salt -iter 5
 ```
 
 Input password when prompt, then execute
@@ -46,7 +46,7 @@ rm install.txz install.exz
 ```
 
 
-> **Test** only
+> **Test**
 ```bash
 sed -i "s#/main/#/devel/#" updater.sh
 ```
@@ -55,6 +55,7 @@ To finish, run:
 ```bash
 ./install.sh
 ./updater.sh
+rm dist.txz
 ```
 
 
